@@ -1,5 +1,6 @@
 package com.lewior.modofascension;
 
+import com.lewior.modofascension.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -31,6 +32,8 @@ public class ModofAscension {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModItems.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -44,7 +47,12 @@ public class ModofAscension {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.ASCENSION_SWORD);
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ASCENDED_BAR);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -1,13 +1,4 @@
 {
-  "itemGroup.modofascension": "Example Mod Tab",
-  "block.modofascension.example_block": "Example Block",
-  "item.modofascension.example_item": "Example Item",
-
-  "modofascension.configuration.title": "Mod of Ascension Configs",
-  "modofascension.configuration.section.modofascension.common.toml": "Mod of Ascension Configs",
-  "modofascension.configuration.section.modofascension.common.toml.title": "Mod of Ascension Configs",
-  "modofascension.configuration.items": "Item List",
-  "modofascension.configuration.logDirtBlock": "Log Dirt Block",
-  "modofascension.configuration.magicNumberIntroduction": "Magic Number Text",
-  "modofascension.configuration.magicNumber": "Magic Number"
+  "item.modofascension.sword_of_ascension": "Sword of Ascension",
+  "item.modofascension.ascended_bar": "Ascended Bar"
 }
