@@ -28,8 +28,8 @@ public class ModItems {
             props -> new Item(
                     props.sword(
                             ASCENDED_MATERIAL,
-                            3,     // Type-specific attack damage bonus for swords
-                            -2.4f  // Type-specific attack speed modifier (reaches 1.6 attack speed)
+                            3,
+                            -2.4f
                     )
             )
     );

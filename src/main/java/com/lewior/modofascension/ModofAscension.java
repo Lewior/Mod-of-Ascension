@@ -1,5 +1,6 @@
 package com.lewior.modofascension;
 
+import com.lewior.modofascension.creativemodetab.ModCreativeModeTabs;
 import com.lewior.modofascension.item.ModItems;
 import org.slf4j.Logger;
 
@@ -32,7 +33,11 @@ public class ModofAscension {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+
+
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab

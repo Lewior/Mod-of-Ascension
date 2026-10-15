@@ -1,4 +1,6 @@
 {
   "item.modofascension.sword_of_ascension": "Sword of Ascension",
-  "item.modofascension.ascended_bar": "Ascended Bar"
+  "item.modofascension.ascended_bar": "Ascended Bar",
+  "creativetab.ModofAscension.mod_combat": "MoA Weapons",
+  "creativetab.ModofAscension.mod_blocks": "Mod Blocks"
 }
