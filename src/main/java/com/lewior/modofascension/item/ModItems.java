@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ModofAscension.MOD_ID);
 
-    // Tool Materials
+    /* Tool Materials */
     public static final ToolMaterial ASCENDED_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             1751,
@@ -22,7 +22,7 @@ public class ModItems {
             Tags.Items.INGOTS_IRON
     );
 
-    // Combat
+    /* Combat */
     public static final DeferredItem<Item> ASCENSION_SWORD = ITEMS.registerItem(
             "sword_of_ascension",
             props -> new Item(
@@ -34,7 +34,7 @@ public class ModItems {
             )
     );
 
-    // Ingredients
+    /* Ingredients */
     public static final DeferredItem<Item> ASCENDED_BAR = ITEMS.registerSimpleItem("ascended_bar");
 
     public static void register(IEventBus eventBus) {

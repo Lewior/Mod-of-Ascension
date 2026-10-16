@@ -1,6 +1,7 @@
 package com.lewior.modofascension.datagen;
 
 import com.lewior.modofascension.ModofAscension;
+import com.lewior.modofascension.block.ModBlocks;
 import com.lewior.modofascension.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -15,9 +16,13 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
+
+        /* ITEMS */
         itemModels.generateFlatItem(ModItems.ASCENSION_SWORD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ASCENDED_BAR.get(), ModelTemplates.FLAT_ITEM);
 
-
+        /* BLOCKS */
+        blockModels.createTrivialCube(ModBlocks.ASCENDED_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.BLOCK_OF_ASCENSION.get());
     }
 }

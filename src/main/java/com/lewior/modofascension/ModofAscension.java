@@ -1,5 +1,6 @@
 package com.lewior.modofascension;
 
+import com.lewior.modofascension.block.ModBlocks;
 import com.lewior.modofascension.creativemodetab.ModCreativeModeTabs;
 import com.lewior.modofascension.item.ModItems;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class ModofAscension {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -50,7 +52,7 @@ public class ModofAscension {
 
     }
 
-    // Add the example block item to the building blocks tab
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.ASCENSION_SWORD);

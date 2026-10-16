@@ -1,6 +1,13 @@
 {
   "item.modofascension.sword_of_ascension": "Sword of Ascension",
   "item.modofascension.ascended_bar": "Ascended Bar",
-  "creativetab.ModofAscension.mod_combat": "MoA Weapons",
-  "creativetab.ModofAscension.mod_blocks": "Mod Blocks"
+
+  "block.modofascension.ascended_ore": "Ascended Ore",
+  "block.modofascension.block_of_ascension": "Block Of Ascension",
+
+  "creativetab.ModofAscension.mod_combat": "MoA Combat",
+  "creativetab.ModofAscension.mod_blocks": "MoA Blocks",
+  "creativetab.ModofAscension.mod_ingredients": "MoA Ingredients"
+
+
 }
