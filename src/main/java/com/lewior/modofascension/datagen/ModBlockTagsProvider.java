@@ -5,6 +5,7 @@ import com.lewior.modofascension.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -17,12 +18,14 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.getRK(ModBlocks.ASCENDED_ORE.get()))
-                .add(ModBlocks.getRK(ModBlocks.BLOCK_OF_ASCENSION.get()));
+                .add(ModBlocks.ASCENDED_ORE.get())
+                .add(ModBlocks.BLOCK_OF_ASCENSION.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.getRK(ModBlocks.ASCENDED_ORE.get()))
-                .add(ModBlocks.getRK(ModBlocks.BLOCK_OF_ASCENSION.get()));
+                .add(ModBlocks.ASCENDED_ORE.get());
+
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.BLOCK_OF_ASCENSION.get());
 
     }
 }

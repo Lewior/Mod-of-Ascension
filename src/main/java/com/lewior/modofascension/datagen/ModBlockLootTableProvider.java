@@ -22,7 +22,7 @@ import java.util.Set;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
     public ModBlockLootTableProvider(Context output) {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), output);
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
@@ -31,9 +31,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.ASCENDED_ORE.get(),
                 createOreDrop(ModBlocks.ASCENDED_ORE.get(), ModItems.ASCENDED_BAR.get()));
-
-
-        createLapisOreDrops()
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
